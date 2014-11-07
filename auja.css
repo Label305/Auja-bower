@@ -115,39 +115,121 @@ h2 span {
       -webkit-transition: opacity 0.5s;
       transition: opacity 0.5s; }
 
+@-Webkit-Keyframes rotateLeftScale {
+  from {
+    -webkit-transform: rotate(180deg) scale(0); }
+  to {
+    -webkit-transform: rotate(135deg) scale(1); } }
+@-ms-Keyframes rotateLeftScale {
+  from {
+    -webkit-transform: rotate(180deg) scale(0); }
+  to {
+    -webkit-transform: rotate(135deg) scale(1); } }
+@Keyframes rotateLeftScale {
+  from {
+    transform: rotate(180deg) scale(0); }
+  to {
+    transform: rotate(135deg) scale(1); } }
+@-Webkit-Keyframes rotateRightScale {
+  from {
+    -webkit-transform: rotate(-180deg) scale(0); }
+  to {
+    -webkit-transform: rotate(-135deg) scale(1); } }
+@-ms-Keyframes rotateRightScale {
+  from {
+    -webkit-transform: rotate(-180deg) scale(0); }
+  to {
+    -webkit-transform: rotate(-135deg) scale(1); } }
+@Keyframes rotateRightScale {
+  from {
+    transform: rotate(-180deg) scale(0); }
+  to {
+    transform: rotate(-135deg) scale(1); } }
+.rotate-left-scale {
+  -webkit-animation-name: rotateLeftScale;
+  -moz-animation-name: rotateLeftScale;
+  -o-animation-name: rotateLeftScale;
+  animation-name: rotateLeftScale; }
+
+.rotate-right-scale {
+  -webkit-animation-name: rotateRightScale;
+  -moz-animation-name: rotateRightScale;
+  -o-animation-name: rotateRightScale;
+  animation-name: rotateRightScale; }
+
 .message {
   position: fixed;
   z-index: 1001;
-  top: calc(50% - 80px);
   right: 0;
   left: 0;
-  width: 550px;
-  min-height: 120px;
   margin: 0 auto;
   padding: 20px;
-  color: white;
-  animation-duration: 0.25s !important;
-  -ms-animation-duration: 0.25s !important;
-  -moz-animation-duration: 0.25s !important;
-  -webkit-animation-duration: 0.25s !important; }
-  .message:before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0; }
-  .message:after {
-    content: "";
+  color: white; }
+  .message.animated {
+    animation-duration: 0.25s !important;
+    -moz-animation-duration: 0.25s !important;
+    -webkit-animation-duration: 0.25s !important; }
+  .message.message-success {
     position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 15px;
-    height: 15px;
-    background-image: url("../img/close.svg");
-    background-size: 15px;
-    cursor: pointer; }
+    width: 300px;
+    height: 300px;
+    top: calc(50% - 150px); }
+    .message.message-success .check-left,
+    .message.message-success .check-right {
+      width: 30px;
+      display: block;
+      position: absolute;
+      left: calc(50% - 15px);
+      transform-origin: 15px 15px;
+      -ms-transform-origin: 15px 15px;
+      -webkit-transform-origin: 15px 15px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      -moz-border-radius-topright: 15px;
+      -moz-border-radius-topleft: 15px;
+      -webkit-border-top-right-radius: 15px;
+      -webkit-border-top-left-radius: 15px; }
+      .message.message-success .check-left.animated,
+      .message.message-success .check-right.animated {
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-delay: 0;
+        animation-play-state: running;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-duration: 0.4s !important;
+        -moz-animation-duration: 0.4s !important;
+        -webkit-animation-duration: 0.4s !important; }
+    .message.message-success .check-left {
+      height: 100px;
+      bottom: 75px; }
+    .message.message-success .check-right {
+      height: 225px;
+      bottom: -50px; }
+  .message.message-info {
+    top: calc(50% - 80px);
+    width: 550px;
+    min-height: 120px; }
+    .message.message-info:before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0; }
+    .message.message-info:after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/close.svg");
+      background-size: 15px;
+      cursor: pointer; }
 
 header {
   position: fixed;
@@ -301,6 +383,11 @@ ul#main-menu {
       padding-bottom: 13px; }
       #panels .panel-menu > div .menu-item-link.active.auja-active-border-main:after, #panels .panel-menu > div .menu-item-link.active.auja-active-border-mainbefore {
         color: inherit; }
+    #panels .panel-menu > div .menu-item-link span {
+      white-space: nowrap;
+      width: calc(100% - 30px);
+      display: inline-block;
+      overflow: hidden; }
   #panels .panel-menu > div .menu-item-spacer {
     min-height: 15px;
     padding: 23px 0 5px 30px;
@@ -316,10 +403,10 @@ ul#main-menu {
   #panels .panel-menu > div input[type="text"] {
     width: 100%;
     display: inline-block;
-    height: 40px;
+    height: 20px;
     background-color: #EDEDED;
     margin-left: -30px;
-    padding: 0 15px;
+    padding: 10px 15px;
     border: 0;
     border-bottom: 2px solid #E3E3E3;
     font-size: 14px; }
@@ -333,13 +420,21 @@ ul#main-menu {
       -webkit-transition: 0.25s; }
 
 #panels .panel-page > div {
-  width: 600px; }
+  width: 550px; }
   #panels .panel-page > div > div {
     margin: 30px; }
 #panels .row {
   width: 100%;
   clear: both;
   display: inline-block; }
+
+input,
+select,
+textarea {
+  border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important; }
 
 form .row.form-item {
   margin: 30px 0 0 0; }
@@ -520,6 +615,43 @@ form .row.form-item {
     font-size: 34px; }
   .authentication-overlay ul li {
     min-height: 34px; } }
+@media (max-width: 1280px) {
+  #panels .panel-menu > div {
+    width: 260px; }
+    #panels .panel-menu > div ul {
+      margin-left: 20px; }
+      #panels .panel-menu > div ul .menu-item-link {
+        padding-top: 10px;
+        padding-bottom: 9px; }
+        #panels .panel-menu > div ul .menu-item-link.active {
+          padding-bottom: 8px !important; }
+        #panels .panel-menu > div ul .menu-item-link:before {
+          top: 10px; }
+        #panels .panel-menu > div ul .menu-item-link:after {
+          width: 20px !important;
+          top: 10px; }
+        #panels .panel-menu > div ul .menu-item-link.menu-item-resource input {
+          margin-left: -20px; }
+    #panels .panel-menu > div input {
+      margin-left: -20px !important;
+      padding-left: 10px !important;
+      padding-right: 10px !important; }
+  #panels .panel-page > div {
+    width: 450px; }
+    #panels .panel-page > div > div {
+      margin: 20px; }
+  #panels .row.form-item {
+    margin-top: 15px; }
+
+  .message {
+    width: 400px !important; }
+
+  input {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important; }
+    input.button {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important; } }
 .trumbowyg-box {
   border: 0 !important;
   font-family: inherit; }
