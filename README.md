@@ -9,7 +9,7 @@ This repo is for distribution on `bower`. The source for this module is in the
 You can install this package with `bower`.
 
 ```shell
-bower install angular
+bower install auja
 ```
 
 Then add a `<script>` to your `index.html`:
