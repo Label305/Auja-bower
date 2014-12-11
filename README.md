@@ -6,32 +6,34 @@ This repo is for distribution on `bower`. The source for this module is in the
 
 ## Install with bower
 
-You can install this package with `bower`.
+1.  You can install this package with `bower`.
 
-```shell
-bower install auja
-```
+      ```shell
+      bower install auja
+      ```
 
-Then add the `<link>` tags, `<script>` tag and the `data-src=""` attribute to your `index.html`:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
+2.  Then add the `<link>` tags, `<script>` tag and the `data-src=""` attribute to your `index.html`:
   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  
-    <link rel="stylesheet" type="text/css" href="bower_components/auja/auja.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/trumbowyg/dist/ui/trumbowyg.min.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/Ionicons/css/ionicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css" />
+    ```html
+    <!DOCTYPE html>
+    <html>
+        <head>
     
-    <script type="text/javascript" src="bower_components/auja/auja.min.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            
+            <link rel="stylesheet" type="text/css" href="bower_components/auja/auja.css" />
+            <link rel="stylesheet" type="text/css" href="bower_components/trumbowyg/dist/ui/trumbowyg.min.css" />
+            <link rel="stylesheet" type="text/css" href="bower_components/Ionicons/css/ionicons.min.css" />
+            <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css" />
+            
+            <script type="text/javascript" src="bower_components/auja/auja.min.js"></script>
+      
+        </head>
+        <body data-src="example/auja.json"></body>
+    </html>
+    ```
     
-  </head>
-  <body data-src="example/auja.json"></body>
-</html>
-```
+3.  Go to [https://label305.github.io/Auja](https://label305.github.io/Auja) to learn about the .json format used to populate the interface. Or use one of the server-side libraries, for example [Auja for Laravel](https://github.com/Label305/Auja-Laravel).
 
 ## License
 
