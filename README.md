@@ -33,7 +33,7 @@ This repo is for distribution on `bower`. The source for this module is in the
     </html>
     ```
     
-3.  Go to [https://label305.github.io/Auja](https://label305.github.io/Auja) to learn about the .json format used to populate the interface. Or use one of the server-side libraries, for example [Auja for Laravel](https://github.com/Label305/Auja-Laravel).
+3.  Go to [https://label305.github.io/Auja](https://label305.github.io/Auja) to learn about the `.json` format used to populate the interface. Or use one of the server-side libraries, for example [Auja for Laravel](https://github.com/Label305/Auja-Laravel).
 
 ## License
 
