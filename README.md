@@ -12,10 +12,25 @@ You can install this package with `bower`.
 bower install auja
 ```
 
-Then add a `<script>` to your `index.html`:
+Then add the `<link>` tags, `<script>` tag and the `data-src=""` attribute to your `index.html`:
 
 ```html
-<script src="/bower_components/auja/auja.min.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+    <link rel="stylesheet" type="text/css" href="bower_components/auja/auja.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/trumbowyg/dist/ui/trumbowyg.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/Ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css" />
+    
+    <script type="text/javascript" src="bower_components/auja/auja.min.js"></script>
+    
+  </head>
+  <body data-src="example/auja.json"></body>
+</html>
 ```
 
 ## License
