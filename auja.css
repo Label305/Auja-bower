@@ -373,7 +373,7 @@ ul#main-menu {
     #panels .panel-menu > div .menu-item-link:before {
       left: 0; }
     #panels .panel-menu > div .menu-item-link:after {
-      content: "";
+      content: "";
       font-family: "Ionicons";
       right: 0;
       color: #E3E3E3; }
