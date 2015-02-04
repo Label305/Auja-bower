@@ -486,6 +486,8 @@ form .row.form-item {
       -ms-transition: 0.25s;
       -moz-transition: 0.25s;
       -webkit-transition: 0.25s; }
+  form .row.form-item.form-item-hidden {
+    display: none; }
   form .row.form-item.form-item-selectMultipleCheckbox > div > div, form .row.form-item.form-item-checkbox > div {
     position: relative;
     float: left;
