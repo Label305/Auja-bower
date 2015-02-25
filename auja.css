@@ -362,6 +362,12 @@ ul#main-menu {
     line-height: 30px;
     cursor: pointer;
     width: calc(100% - 45px); }
+    #panels .panel-menu > div .menu-item-link.external {
+      cursor: default; }
+      #panels .panel-menu > div .menu-item-link.external a {
+        color: #454545; }
+      #panels .panel-menu > div .menu-item-link.external:after {
+        content: ""; }
     #panels .panel-menu > div .menu-item-link:before, #panels .panel-menu > div .menu-item-link:after {
       position: absolute;
       font-size: 18px;
