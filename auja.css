@@ -710,6 +710,18 @@ form .row.form-item {
   .trumbowyg-box .trumbowyg-editor {
     background-color: #EDEDED;
     padding: 20px; }
+    .trumbowyg-box .trumbowyg-editor h1, .trumbowyg-box .trumbowyg-editor h2, .trumbowyg-box .trumbowyg-editor h3, .trumbowyg-box .trumbowyg-editor h4, .trumbowyg-box .trumbowyg-editor h5, .trumbowyg-box .trumbowyg-editor h6 {
+      margin-left: 0; }
+    .trumbowyg-box .trumbowyg-editor ul {
+      margin-left: 5px; }
+      .trumbowyg-box .trumbowyg-editor ul li {
+        margin-left: 25px;
+        list-style-type: disc; }
+    .trumbowyg-box .trumbowyg-editor ol {
+      margin-left: 5px; }
+      .trumbowyg-box .trumbowyg-editor ol li {
+        margin-left: 25px;
+        list-style-type: decimal; }
   .trumbowyg-box .trumbowyg-button-pane {
     background-color: #E3E3E3;
     border: 0 !important; }
