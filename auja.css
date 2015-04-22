@@ -817,33 +817,38 @@ form .row.form-item {
     padding: 20px !important; }
 
 ul.jstree-children {
-  margin: 0 0 0 30px !important;
+  margin: 0 0 0 15px !important;
   border-left: 2px dotted #E3E3E3; }
   ul.jstree-children.jstree-container-ul {
     margin: 0 !important; }
+  ul.jstree-children .jstree-node {
+    margin-left: -4px; }
   ul.jstree-children li {
     position: relative; }
     ul.jstree-children li a {
       display: block;
-      padding: 5px 15px 5px 20px;
-      margin: 10px 0;
+      padding: 5px 15px 5px 14px;
+      margin: 10px 0 10px 0px;
       color: #454545;
       height: 20px;
       line-height: 20px;
-      font-size: 14px; }
+      font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
       ul.jstree-children li a:before {
         content: "";
         position: absolute;
-        left: 4px;
+        left: 8px;
         top: 14px;
-        width: 10px;
+        width: 3px;
         height: 0;
         border-bottom: 2px dotted #E3E3E3; }
       ul.jstree-children li a:after {
         content: "";
         display: block;
         position: absolute;
-        left: -4px;
+        left: 0;
         top: 12px;
         width: 6px;
         height: 6px;
