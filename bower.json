@@ -18,6 +18,7 @@
   "dependencies": {
     "ionicons": "~2.0.0",
     "trumbowyg": "~1.1.2",
-    "animate.css": "~3.2.0"
+    "animate.css": "~3.2.0",
+    "tinymce": "~4.1.10"
   }
 }
