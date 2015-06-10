@@ -379,7 +379,7 @@ ul#main-menu {
     #panels .panel-menu > div .menu-item-link:before {
       left: 0; }
     #panels .panel-menu > div .menu-item-link:after {
-      content: "";
+      content: "";
       font-family: "Ionicons";
       right: 0;
       color: #E3E3E3; }
@@ -387,7 +387,7 @@ ul#main-menu {
       border-bottom: 2px solid;
       border-color: inherit;
       padding-bottom: 13px; }
-      #panels .panel-menu > div .menu-item-link.active.auja-active-border-main:after, #panels .panel-menu > div .menu-item-link.active.auja-active-border-mainbefore {
+      #panels .panel-menu > div .menu-item-link.active.auja-active-border-main:after, #panels .panel-menu > div .menu-item-link.active.auja-active-border-main:before {
         color: inherit; }
     #panels .panel-menu > div .menu-item-link span {
       white-space: nowrap;
