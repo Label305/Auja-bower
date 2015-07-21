@@ -389,6 +389,13 @@ ul#main-menu {
       padding-bottom: 13px; }
       #panels .panel-menu > div .menu-item-link.active.auja-active-border-main:after, #panels .panel-menu > div .menu-item-link.active.auja-active-border-main:before {
         color: inherit; }
+    #panels .panel-menu > div .menu-item-link.no-target {
+      cursor: default; }
+      #panels .panel-menu > div .menu-item-link.no-target:after {
+        content: "";
+        font-family: "Ionicons";
+        right: 0;
+        color: #E3E3E3; }
     #panels .panel-menu > div .menu-item-link span {
       white-space: nowrap;
       width: calc(100% - 30px);
