@@ -1964,7 +1964,7 @@ ul.jstree-children {
       cursor: pointer; }
 
 .mce-tinymce {
-  float: left; }
+  float: left !important; }
   .mce-tinymce label {
     width: auto !important; }
   .mce-tinymce .mce-panel, .mce-tinymce .mce-btn, .mce-tinymce .mce-flow-layout {
