@@ -1963,9 +1963,11 @@ ul.jstree-children {
       background: #c0392b;
       cursor: pointer; }
 
-.mce-tinymce label {
-  width: auto !important; }
-.mce-tinymce .mce-panel, .mce-tinymce .mce-btn, .mce-tinymce .mce-flow-layout {
-  background: #EDEDED !important; }
+.mce-tinymce {
+  float: left; }
+  .mce-tinymce label {
+    width: auto !important; }
+  .mce-tinymce .mce-panel, .mce-tinymce .mce-btn, .mce-tinymce .mce-flow-layout {
+    background: #EDEDED !important; }
 
 /*# sourceMappingURL=auja.css.map */
