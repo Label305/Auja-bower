@@ -1,6 +1,12 @@
 Packaged Auja
 ==========
 
+__Deprecated__
+
+This repo will no longer be maintained and will be deleted in the start of 2017.
+
+__About__
+
 This repo is for distribution on `bower`. The source for this module is in the
 [main Auja repo](https://github.com/Label305/Auja).
 
